@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LabPigLatin/1.0.0": {
+        "runtime": {
+          "LabPigLatin.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LabPigLatin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\LabPigLatin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\LabPigLatin.AssemblyInfoInputs.cache
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\LabPigLatin.AssemblyInfo.cs
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\LabPigLatin.csproj.CoreCompileInputs.cache
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\LabPigLatin.sourcelink.json
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\bin\Debug\net8.0\LabPigLatin.exe
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\bin\Debug\net8.0\LabPigLatin.deps.json
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\bin\Debug\net8.0\LabPigLatin.runtimeconfig.json
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\bin\Debug\net8.0\LabPigLatin.dll
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\bin\Debug\net8.0\LabPigLatin.pdb
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\LabPigLatin.dll
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\refint\LabPigLatin.dll
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\LabPigLatin.pdb
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\LabPigLatin.genruntimeconfig.cache
+C:\Users\cstock\source\repos\LabPigLatin\LabPigLatin\obj\Debug\net8.0\ref\LabPigLatin.dll
