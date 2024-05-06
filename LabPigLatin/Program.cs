@@ -1,10 +1,5 @@
 ﻿
-
-//maincode
-
-using System.Diagnostics.Tracing;
-using System.Globalization;
-
+//main code
 
 
 
@@ -19,69 +14,68 @@ while (runTranslator)
 
 
 
+    Console.WriteLine("Please input the word or sentence you would like to translate:");
+    string sentence = Console.ReadLine();
+    string[] words = sentence.Split();
 
-Console.WriteLine("Please enter a word to translate");
-
-string userInput = Console.ReadLine().ToLower().Trim();
-
-    //Split-- variable.Split to get each word from the user split into a word to send through the translator work in progress
-    //string[] userInput = sentence.split
-
-
-    //determine whether user is writing a word with a vowel or not and output different results based on the word input
-
-
-    if (IsAVowel(userInput) == true)
-{
-    Console.WriteLine(TranslateVowel(userInput));
-}
-else
-{
-    Console.WriteLine(TranslateConsonant(userInput));
-}
-
-//method
-
-//this method is to check if the word starts with a vowel or not using a bool
-static bool IsAVowel(string userInput)
-{
-    char[] vowelArray = { 'a', 'e', 'i', 'o', 'u' };
-    char firstLetter = (userInput[0]);
-
-    if (Array.IndexOf(vowelArray, firstLetter)!=-1 )
+    foreach (string word in words)
     {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
 
-//this method is to convert the words that start with a vowel into piglatin
-static string TranslateVowel(string userInput)
-{
-
-    string translation = userInput + "way";
-    return translation;
-
-}
-
-//this method is to convert the words that start with a consonant into piglatin
-static string TranslateConsonant(string userInput)
-{
-    char firstLetter = userInput[0];
-
-
-//put the vowel array in here too so that I can compare the letters of the word against it
-
-
-    char[] vowelArray = { 'a', 'e', 'i', 'o', 'u' };
-    int findFirstVowel = -1;
-    string ctranslation = string.Empty;
-        for (int i = 0; i < userInput.Length; i++)
+        if (IsAVowel(word) == true)
         {
-            if (Array.IndexOf(vowelArray, char.ToLower(userInput[i])) != -1)
+            Console.Write(TranslateVowel(word));
+            Console.Write(" ");
+        }
+        else
+        {
+            Console.Write(TranslateConsonant(word));
+            Console.Write(" ");
+        }
+
+    }
+
+
+
+    //methods
+
+    //method#1
+
+
+    static bool IsAVowel(string words)
+    {
+        char[] vowelArray = { 'a', 'e', 'i', 'o', 'u' };
+        char firstLetter = (words[0]);
+
+        if (Array.IndexOf(vowelArray, firstLetter) != -1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+
+    //method #2
+    static string TranslateVowel(string word)
+    {
+
+        string translation = word + "way";
+        return translation;
+
+    }
+    //method #3
+    static string TranslateConsonant(string words)
+    {
+        char firstLetter = words[0];
+
+        char[] vowelArray = { 'a', 'e', 'i', 'o', 'u' };
+        int findFirstVowel = -1;
+        string ctranslation = string.Empty;
+        for (int i = 0; i < words.Length; i++)
+        {
+            if (Array.IndexOf(vowelArray, char.ToLower(words[i])) != -1)
             {
                 findFirstVowel = i;
                 break;
@@ -89,39 +83,37 @@ static string TranslateConsonant(string userInput)
 
         }
 
-// this is where the code decides which one I am returning based on where the vowel is
 
-
-        if(findFirstVowel != -1)
+        if (findFirstVowel != -1)
         {
-            string mainWord = userInput.Substring(findFirstVowel);
-            string firstPart = userInput.Substring(0, findFirstVowel);
+            string mainWord = words.Substring(findFirstVowel);
+            string firstPart = words.Substring(0, findFirstVowel);
             ctranslation = mainWord + firstPart + "ay";
         }
-//this is just in case there are no vowels at all in the word such as "crypt"
 
         else
         {
-            ctranslation = userInput + "ay";
+            ctranslation = words + "ay";
         }
 
- 
-    return ctranslation; 
-}
 
-// alright time to make sure we can get out of the loop
+        return ctranslation;
+    }
+
+
+    // alright time to make sure we can get out of the loop
 
     while (true)
     {
-        Console.WriteLine("Would you like to translate again? y/n");
-        string choice = Console.ReadLine().ToLower().Trim() ;
-        if(choice == "y")
+        Console.WriteLine("\nWould you like to translate again? y/n");
+        string choice = Console.ReadLine().ToLower().Trim();
+        if (choice == "y")
         {
             break;
         }
-        else if(choice == "n")
+        else if (choice == "n")
         {
-            runTranslator = false ;
+            runTranslator = false;
             break;
         }
         else
@@ -130,6 +122,4 @@ static string TranslateConsonant(string userInput)
         }
     }
 }
-
-
 
